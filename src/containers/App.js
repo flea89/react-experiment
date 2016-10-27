@@ -4,21 +4,22 @@
  *          This modifications only run once when the generator is invoked - if
  *          you edit them, they are not updated again.
  */
-import React, {
-  Component,
+import React, { Component,
   PropTypes
 } from 'react';
 import {} from '../actions/';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Main from '../components/App';
+import AppComponent from '../components/App';
+
 /* Populated by react-webpack-redux:reducer */
 class App extends Component {
   render() {
     const { actions } = this.props;
-    return <Main actions={actions} />;
+    return <AppComponent actions={actions} />;
   }
 }
+
 /* Populated by react-webpack-redux:reducer
  *
  * HINT: if you adjust the initial type of your reducer, you will also have to

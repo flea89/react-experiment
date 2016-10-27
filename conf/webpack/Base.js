@@ -71,7 +71,7 @@ class WebpackBaseConfig {
     return {
       context: this.srcPathAbsolute,
       debug: false,
-      devtool: 'eval',
+      devtool: 'source-map',
       devServer: {
         contentBase: './src/',
         publicPath: '/assets/',

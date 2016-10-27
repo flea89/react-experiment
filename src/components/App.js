@@ -4,6 +4,7 @@ import AppBar from 'material-ui/AppBar';
 import FlatButton from 'material-ui/FlatButton';
 import {increment} from '../actions/index';
 import { connect } from 'react-redux';
+import StatementsList from '../containers/StatementList';
 
 
 class AppComponent extends React.Component {
@@ -21,6 +22,7 @@ class AppComponent extends React.Component {
 
           variable: {this.props.variable}
         </div>
+        <StatementsList/>
       </div>
     );
   }

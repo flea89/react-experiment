@@ -8,6 +8,7 @@
   "extends": "airbnb",
   "rules": {
     no-debugger: ["warn"],
+    no-console: ["warn"],
     "comma-dangle": ["off"],
     "no-unused-vars": ["warn"],
     "object-curly-spacing": ["off"],

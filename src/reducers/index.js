@@ -8,12 +8,13 @@
  */
 /* Populated by react-webpack-redux:reducer */
 import { combineReducers } from 'redux';
+import statementsReducer from '../reducers/statements';
+import categoriesReducer from '../reducers/categories';
 
 const reducers = {
   dummyFoo(state = {
     variable: 0
   }, action) {
-    console.log('asd');
     switch (action.type) {
       case 'INCREMENT':
         return {
@@ -22,8 +23,11 @@ const reducers = {
       default:
         return state;
     }
-  }
+  },
+  statements: statementsReducer,
+  categories: categoriesReducer
 };
 const combined = combineReducers(reducers);
+
 
 module.exports = combined;

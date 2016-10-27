@@ -8,6 +8,6 @@ import {action1, action2} from '../actions/'
 const actions = {
   increment: {
     type: 'INCREMENT'
-  }
+  },
 };
 module.exports = actions;
